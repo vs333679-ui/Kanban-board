@@ -140,4 +140,4 @@ function loadBoard() {
         card.addEventListener("dragend", dragEnd);
 
     });
-                                               }
+}
