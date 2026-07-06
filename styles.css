@@ -1,0 +1,167 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#eef2f7;
+padding:20px;
+}
+
+header{
+text-align:center;
+margin-bottom:25px;
+}
+
+header h1{
+margin-bottom:20px;
+color:#333;
+}
+
+.task-form{
+display:flex;
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
+}
+
+.task-form input{
+padding:10px;
+width:250px;
+border:1px solid #ccc;
+border-radius:8px;
+outline:none;
+}
+
+.task-form select{
+padding:10px;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+.task-form button{
+padding:10px 20px;
+background:#007bff;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+transition:.3s;
+}
+
+.task-form button:hover{
+background:#0056b3;
+}
+
+.board{
+display:flex;
+gap:20px;
+justify-content:space-between;
+flex-wrap:wrap;
+}
+
+.column{
+background:white;
+flex:1;
+min-width:300px;
+min-height:500px;
+padding:15px;
+border-radius:12px;
+box-shadow:0 5px 10px rgba(0,0,0,.15);
+}
+
+.column h2{
+text-align:center;
+margin-bottom:15px;
+color:#444;
+}
+
+.card{
+background:#fff;
+padding:12px;
+margin-bottom:12px;
+border-radius:10px;
+cursor:grab;
+box-shadow:0 2px 6px rgba(0,0,0,.2);
+border-left:6px solid royalblue;
+}
+
+.card p{
+margin-bottom:10px;
+word-wrap:break-word;
+}
+
+.priority{
+display:inline-block;
+padding:4px 8px;
+border-radius:5px;
+font-size:12px;
+color:white;
+margin-bottom:10px;
+}
+
+.high{
+background:red;
+}
+
+.medium{
+background:orange;
+}
+
+.low{
+background:green;
+}
+
+.buttons{
+display:flex;
+justify-content:space-between;
+margin-top:10px;
+}
+
+.buttons button{
+padding:6px 10px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+color:white;
+}
+
+.edit{
+background:#28a745;
+}
+
+.delete{
+background:#dc3545;
+}
+
+.column.drag-over{
+background:#dfefff;
+}
+
+@media(max-width:900px){
+
+.board{
+flex-direction:column;
+}
+
+.column{
+width:100%;
+}
+
+.task-form{
+flex-direction:column;
+align-items:center;
+}
+
+.task-form input{
+width:90%;
+}
+
+.task-form select,
+.task-form button{
+width:90%;
+}
+
+}
